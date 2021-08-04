@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct ScheduleModel: Codable {
+struct Schedule: Codable {
     var open: String
     var close: String
 }

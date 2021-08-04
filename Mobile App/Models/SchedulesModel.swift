@@ -7,12 +7,12 @@
 
 import Foundation
 
-struct SchedulesModel: Codable {
-    var monday: ScheduleModel?
-    var tuesday: ScheduleModel?
-    var wednesday: ScheduleModel?
-    var thursday: ScheduleModel?
-    var friday: ScheduleModel?
-    var saturday: ScheduleModel?
-    var sunday: ScheduleModel?
+struct Schedules: Codable {
+    var monday: Schedule?
+    var tuesday: Schedule?
+    var wednesday: Schedule?
+    var thursday: Schedule?
+    var friday: Schedule?
+    var saturday: Schedule?
+    var sunday: Schedule?
 }

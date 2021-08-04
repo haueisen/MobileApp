@@ -7,13 +7,13 @@
 
 import Foundation
 
-struct LocationModel: Codable {
+struct Location: Codable {
     var id: Int
     var name: String
     var review: Float
     var type: String
 }
 
-struct LocationListModel: Codable {
-    var listLocations: [LocationModel]
+struct LocationList: Codable {
+    var listLocations: [Location]
 }
