@@ -62,10 +62,27 @@
                             <outlet property="delegate" destination="w3r-Vl-A54" id="GN4-qU-RWf"/>
                         </connections>
                     </collectionView>
+                    <navigationItem key="navigationItem" id="qrA-0m-A6T"/>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yml-XQ-3Sv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-412" y="108"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="l13-Jy-BcI">
+            <objects>
+                <navigationController id="C3X-0m-K1o" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="sQG-dY-PcV">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="w3r-Vl-A54" kind="relationship" relationship="rootViewController" id="KER-DC-IhA"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IfI-Vb-9Eg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-413" y="-810"/>
         </scene>
     </scenes>
     <resources>
