@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		7261CB3E26B8A0F000A8E944 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7261CB3D26B8A0F000A8E944 /* AppDelegate.swift */; };
-		7261CB4226B8A0F000A8E944 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7261CB4126B8A0F000A8E944 /* ViewController.swift */; };
 		7261CB4726B8A0F400A8E944 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7261CB4626B8A0F400A8E944 /* Assets.xcassets */; };
 		7261CB4A26B8A0F400A8E944 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7261CB4826B8A0F400A8E944 /* LaunchScreen.storyboard */; };
 		7261CB5526B8A0F500A8E944 /* Mobile_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7261CB5426B8A0F500A8E944 /* Mobile_AppTests.swift */; };
@@ -20,6 +19,8 @@
 		7261CB9226B9704900A8E944 /* LocationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7261CB9126B9704900A8E944 /* LocationModel.swift */; };
 		7261CB9726B9708800A8E944 /* LocationDetailsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7261CB9626B9708800A8E944 /* LocationDetailsModel.swift */; };
 		7261CBA326B983DE00A8E944 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7261CBA226B983DE00A8E944 /* DetailViewController.swift */; };
+		7261CBA826B996AD00A8E944 /* SchedulesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7261CBA726B996AD00A8E944 /* SchedulesModel.swift */; };
+		7261CBAD26B9974400A8E944 /* ScheduleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7261CBAC26B9974400A8E944 /* ScheduleModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,7 +43,6 @@
 /* Begin PBXFileReference section */
 		7261CB3A26B8A0F000A8E944 /* Mobile App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mobile App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7261CB3D26B8A0F000A8E944 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7261CB4126B8A0F000A8E944 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7261CB4626B8A0F400A8E944 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7261CB4926B8A0F400A8E944 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7261CB4B26B8A0F400A8E944 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -59,6 +59,8 @@
 		7261CB9126B9704900A8E944 /* LocationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationModel.swift; sourceTree = "<group>"; };
 		7261CB9626B9708800A8E944 /* LocationDetailsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDetailsModel.swift; sourceTree = "<group>"; };
 		7261CBA226B983DE00A8E944 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		7261CBA726B996AD00A8E944 /* SchedulesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchedulesModel.swift; sourceTree = "<group>"; };
+		7261CBAC26B9974400A8E944 /* ScheduleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,11 +111,11 @@
 		7261CB3C26B8A0F000A8E944 /* Mobile App */ = {
 			isa = PBXGroup;
 			children = (
+				7261CB9B26B9713500A8E944 /* Models */,
 				7261CB8A26B96FD500A8E944 /* Networking */,
 				7261CB7F26B96E1800A8E944 /* DetailScreen */,
 				7261CB7E26B96E0A00A8E944 /* HomeScreen */,
 				7261CB3D26B8A0F000A8E944 /* AppDelegate.swift */,
-				7261CB4126B8A0F000A8E944 /* ViewController.swift */,
 				7261CB4626B8A0F400A8E944 /* Assets.xcassets */,
 				7261CB4826B8A0F400A8E944 /* LaunchScreen.storyboard */,
 				7261CB4B26B8A0F400A8E944 /* Info.plist */,
@@ -168,7 +170,6 @@
 		7261CB9026B9702400A8E944 /* Location */ = {
 			isa = PBXGroup;
 			children = (
-				7261CB9B26B9713500A8E944 /* Models */,
 				7261CB8B26B9701100A8E944 /* LocationAPI.swift */,
 			);
 			path = Location;
@@ -179,6 +180,8 @@
 			children = (
 				7261CB9126B9704900A8E944 /* LocationModel.swift */,
 				7261CB9626B9708800A8E944 /* LocationDetailsModel.swift */,
+				7261CBA726B996AD00A8E944 /* SchedulesModel.swift */,
+				7261CBAC26B9974400A8E944 /* ScheduleModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -193,12 +196,15 @@
 				7261CB3626B8A0F000A8E944 /* Sources */,
 				7261CB3726B8A0F000A8E944 /* Frameworks */,
 				7261CB3826B8A0F000A8E944 /* Resources */,
+				72680A9D26B9CE2C00445062 /* Swift Lint */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = "Mobile App";
+			packageProductDependencies = (
+			);
 			productName = "Mobile App";
 			productReference = 7261CB3A26B8A0F000A8E944 /* Mobile App.app */;
 			productType = "com.apple.product-type.application";
@@ -270,6 +276,8 @@
 				Base,
 			);
 			mainGroup = 7261CB3126B8A0F000A8E944;
+			packageReferences = (
+			);
 			productRefGroup = 7261CB3B26B8A0F000A8E944 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -309,13 +317,35 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		72680A9D26B9CE2C00445062 /* Swift Lint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Swift Lint";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		7261CB3626B8A0F000A8E944 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7261CB4226B8A0F000A8E944 /* ViewController.swift in Sources */,
+				7261CBA826B996AD00A8E944 /* SchedulesModel.swift in Sources */,
 				7261CB3E26B8A0F000A8E944 /* AppDelegate.swift in Sources */,
+				7261CBAD26B9974400A8E944 /* ScheduleModel.swift in Sources */,
 				7261CB9726B9708800A8E944 /* LocationDetailsModel.swift in Sources */,
 				7261CB9226B9704900A8E944 /* LocationModel.swift in Sources */,
 				7261CB8626B96FA800A8E944 /* HomeViewController.swift in Sources */,
@@ -499,7 +529,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.flaviohaueisen.Mobile-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -519,7 +549,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.flaviohaueisen.Mobile-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

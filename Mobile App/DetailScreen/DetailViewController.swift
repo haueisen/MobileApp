@@ -8,6 +8,6 @@
 import Foundation
 import UIKit
 
-class DetailViewController : UITableViewController {
-    
+class DetailViewController: UITableViewController {
+
 }

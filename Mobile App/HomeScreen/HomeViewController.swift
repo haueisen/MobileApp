@@ -8,6 +8,6 @@
 import Foundation
 import UIKit
 
-class HomeViewController : UICollectionViewController {
-    
+class HomeViewController: UICollectionViewController {
+
 }
