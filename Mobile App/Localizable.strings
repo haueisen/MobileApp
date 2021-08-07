@@ -1,0 +1,6 @@
+"error_title" = "Error";
+"error_message" = "Sorry! Something went wrong... :(";
+
+// MARK: - Home view controller
+"home_title" = "Home";
+"retry" = "Retry";

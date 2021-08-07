@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-Regular.ttf">
+            <string>OpenSans-Regular</string>
+        </array>
+        <array key="OpenSans-SemiBold.ttf">
+            <string>OpenSans-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="locationcell" id="Zxo-EO-xkU" customClass="LocationCell" customModule="Mobile_App" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="156" height="276"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="MOV-BC-32j">
+                <rect key="frame" x="0.0" y="0.0" width="156" height="276"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Café escritório" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b4Q-vU-TnY">
+                        <rect key="frame" x="8" y="202" width="140" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="22" id="QeE-MB-GiC"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="OpenSans-SemiBold" family="Open Sans" pointSize="16"/>
+                        <color key="textColor" name="topaz"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="021-lC-YMw">
+                        <rect key="frame" x="0.0" y="0.0" width="156" height="194"/>
+                        <color key="backgroundColor" name="topaz"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Coworking" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BJy-XW-YwY">
+                        <rect key="frame" x="8" y="224" width="140" height="19"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="19" id="B2n-YK-xPg"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="14"/>
+                        <color key="textColor" name="brownish_gray"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lIC-Ze-eqN" userLabel="Review">
+                        <rect key="frame" x="10" y="243" width="136" height="17"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4.5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pyu-wQ-dhC">
+                                <rect key="frame" x="73" y="0.0" width="17" height="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="17" id="D5b-9p-PA2"/>
+                                    <constraint firstAttribute="width" constant="17" id="w00-gX-WkL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="12"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3kl-qe-dAy" customClass="StarScoreView" customModule="Mobile_App" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="3" width="67" height="11"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="11" id="Lv5-rW-3eB"/>
+                                    <constraint firstAttribute="width" constant="67" id="bYO-nf-Wew"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="Pyu-wQ-dhC" firstAttribute="leading" secondItem="3kl-qe-dAy" secondAttribute="trailing" constant="6" id="Ekc-Eg-M2n"/>
+                            <constraint firstItem="Pyu-wQ-dhC" firstAttribute="centerY" secondItem="lIC-Ze-eqN" secondAttribute="centerY" id="MNP-ap-S4f"/>
+                            <constraint firstItem="3kl-qe-dAy" firstAttribute="centerY" secondItem="lIC-Ze-eqN" secondAttribute="centerY" id="fCg-PW-97k"/>
+                            <constraint firstAttribute="height" constant="17" id="jgZ-D9-MMi"/>
+                            <constraint firstItem="3kl-qe-dAy" firstAttribute="leading" secondItem="lIC-Ze-eqN" secondAttribute="leading" id="nf7-b3-e8W"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="BJy-XW-YwY" secondAttribute="trailing" constant="8" id="4Wm-1s-nsC"/>
+                    <constraint firstItem="021-lC-YMw" firstAttribute="top" secondItem="MOV-BC-32j" secondAttribute="top" id="DxF-Kw-Cp3"/>
+                    <constraint firstItem="BJy-XW-YwY" firstAttribute="top" secondItem="b4Q-vU-TnY" secondAttribute="bottom" id="KsC-0O-IbB"/>
+                    <constraint firstItem="lIC-Ze-eqN" firstAttribute="leading" secondItem="MOV-BC-32j" secondAttribute="leading" constant="10" id="OLa-Ht-F8D"/>
+                    <constraint firstAttribute="trailing" secondItem="021-lC-YMw" secondAttribute="trailing" id="Z0f-V3-aoE"/>
+                    <constraint firstItem="lIC-Ze-eqN" firstAttribute="top" secondItem="BJy-XW-YwY" secondAttribute="bottom" id="a6U-C6-lcl"/>
+                    <constraint firstItem="b4Q-vU-TnY" firstAttribute="leading" secondItem="MOV-BC-32j" secondAttribute="leading" constant="8" id="ge6-27-Xv1"/>
+                    <constraint firstItem="BJy-XW-YwY" firstAttribute="leading" secondItem="MOV-BC-32j" secondAttribute="leading" constant="8" id="iNt-Tj-heh"/>
+                    <constraint firstAttribute="trailing" secondItem="b4Q-vU-TnY" secondAttribute="trailing" constant="8" id="ody-D4-82N"/>
+                    <constraint firstAttribute="trailing" secondItem="lIC-Ze-eqN" secondAttribute="trailing" constant="10" id="rPn-Ew-UzK"/>
+                    <constraint firstAttribute="bottom" secondItem="lIC-Ze-eqN" secondAttribute="bottom" constant="16" id="vqQ-hV-Ey4"/>
+                    <constraint firstItem="021-lC-YMw" firstAttribute="leading" secondItem="MOV-BC-32j" secondAttribute="leading" id="wKs-2E-vyd"/>
+                    <constraint firstItem="b4Q-vU-TnY" firstAttribute="top" secondItem="021-lC-YMw" secondAttribute="bottom" constant="8" id="wdv-su-t7b"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <size key="customSize" width="175" height="276"/>
+            <connections>
+                <outlet property="locationType" destination="BJy-XW-YwY" id="fZ3-7q-eb4"/>
+                <outlet property="name" destination="b4Q-vU-TnY" id="wMu-v9-vaU"/>
+                <outlet property="picture" destination="021-lC-YMw" id="gYY-cQ-bkD"/>
+                <outlet property="score" destination="Pyu-wQ-dhC" id="taL-8W-opf"/>
+                <outlet property="starScore" destination="3kl-qe-dAy" id="1ZD-at-ABc"/>
+            </connections>
+            <point key="canvasLocation" x="136.23188405797103" y="-73.660714285714278"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <namedColor name="brownish_gray">
+            <color red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="topaz">
+            <color red="0.078431372549019607" green="0.67843137254901964" blue="0.72156862745098038" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
