@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="4Bc-eL-BQc">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="S9M-cy-y7n">
+            <objects>
+                <viewController id="pcx-oc-gps" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pQG-NE-aBa">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="map_on" translatesAutoresizingMaskIntoConstraints="NO" id="XVq-qL-QWB">
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="OlS-24-o81"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="OlS-24-o81" firstAttribute="trailing" secondItem="XVq-qL-QWB" secondAttribute="trailing" id="0u3-sy-c00"/>
+                            <constraint firstItem="OlS-24-o81" firstAttribute="bottom" secondItem="XVq-qL-QWB" secondAttribute="bottom" id="0zi-bG-NNX"/>
+                            <constraint firstItem="XVq-qL-QWB" firstAttribute="top" secondItem="OlS-24-o81" secondAttribute="top" id="iHf-4i-LNs"/>
+                            <constraint firstItem="XVq-qL-QWB" firstAttribute="leading" secondItem="OlS-24-o81" secondAttribute="leading" id="kkI-Ro-cMy"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="map_off" selectedImage="map_on" id="MXJ-A1-SlJ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OZG-cc-tIt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="664" y="797"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tL1-TL-ydP">
+            <objects>
+                <viewController id="nbZ-F0-XhM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cj4-Kc-IKh">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile_on" translatesAutoresizingMaskIntoConstraints="NO" id="b9P-8N-h1e">
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Vih-3b-HdZ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="b9P-8N-h1e" firstAttribute="top" secondItem="Vih-3b-HdZ" secondAttribute="top" id="7U4-i3-vXL"/>
+                            <constraint firstItem="Vih-3b-HdZ" firstAttribute="bottom" secondItem="b9P-8N-h1e" secondAttribute="bottom" id="EgM-Qg-tbZ"/>
+                            <constraint firstItem="b9P-8N-h1e" firstAttribute="leading" secondItem="Vih-3b-HdZ" secondAttribute="leading" id="Hbv-Fu-nae"/>
+                            <constraint firstItem="Vih-3b-HdZ" firstAttribute="trailing" secondItem="b9P-8N-h1e" secondAttribute="trailing" id="uFG-kv-zKW"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="profile_off" selectedImage="profile_on" id="66r-vV-5HP"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Exx-iY-mNz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1796" y="797"/>
+        </scene>
+        <!--HomeNavigation-->
+        <scene sceneID="GDQ-rT-ESH">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Home" referencedIdentifier="HomeNavigation" id="Ydt-G6-YNU" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="home_off" selectedImage="home_on" id="hNV-jw-8eM"/>
+                    <navigationItem key="navigationItem" id="wZh-an-Ar0"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7OH-EG-ptM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="62" y="480"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="PzA-ck-6pG">
+            <objects>
+                <tabBarController id="4Bc-eL-BQc" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="Re9-88-t0g">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Ydt-G6-YNU" kind="relationship" relationship="viewControllers" id="fGy-EU-pa7"/>
+                        <segue destination="pcx-oc-gps" kind="relationship" relationship="viewControllers" id="HoL-bi-lJ4"/>
+                        <segue destination="nbZ-F0-XhM" kind="relationship" relationship="viewControllers" id="KUH-sA-Qhn"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QoV-nr-eWr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="665" y="48"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="home_off" width="30" height="30"/>
+        <image name="home_on" width="30" height="30"/>
+        <image name="map_off" width="30" height="30"/>
+        <image name="map_on" width="30" height="30"/>
+        <image name="profile_off" width="30" height="30"/>
+        <image name="profile_on" width="30" height="30"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
