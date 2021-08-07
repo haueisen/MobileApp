@@ -27,8 +27,6 @@
 		72680ADF26BB688E00445062 /* TitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72680ADE26BB688D00445062 /* TitleCell.swift */; };
 		72680AE826BC28E500445062 /* TitleCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72680AE726BC28E500445062 /* TitleCellView.xib */; };
 		72680AF126BC3B9800445062 /* UIImage+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72680AF026BC3B9800445062 /* UIImage+Color.swift */; };
-		72680B0326BC4F0F00445062 /* ErrorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72680B0226BC4F0F00445062 /* ErrorView.xib */; };
-		72680B0826BC4F2000445062 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72680B0726BC4F2000445062 /* ErrorView.swift */; };
 		72680B1726BC515A00445062 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 72680B1626BC515A00445062 /* Localizable.strings */; };
 		72680B1C26BC5A7100445062 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72680B1B26BC5A7100445062 /* DetailViewModel.swift */; };
 		72680B2C26BC612B00445062 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72680B2B26BC612B00445062 /* DetailViewController.swift */; };
@@ -46,6 +44,7 @@
 		72680B6A26BC973F00445062 /* StarScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72680B6926BC973F00445062 /* StarScoreView.swift */; };
 		7282723C26BED8A30025304B /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7282723B26BED8A30025304B /* ImageDownloader.swift */; };
 		7282724426BEE99E0025304B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7282724326BEE99E0025304B /* Main.storyboard */; };
+		7282725826BEF9B20025304B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7282725726BEF9B20025304B /* MainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,8 +91,6 @@
 		72680ADE26BB688D00445062 /* TitleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleCell.swift; sourceTree = "<group>"; };
 		72680AE726BC28E500445062 /* TitleCellView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TitleCellView.xib; sourceTree = "<group>"; };
 		72680AF026BC3B9800445062 /* UIImage+Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Color.swift"; sourceTree = "<group>"; };
-		72680B0226BC4F0F00445062 /* ErrorView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ErrorView.xib; sourceTree = "<group>"; };
-		72680B0726BC4F2000445062 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
 		72680B1626BC515A00445062 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		72680B1B26BC5A7100445062 /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
 		72680B2B26BC612B00445062 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
@@ -111,6 +108,7 @@
 		72680B6926BC973F00445062 /* StarScoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarScoreView.swift; sourceTree = "<group>"; };
 		7282723B26BED8A30025304B /* ImageDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloader.swift; sourceTree = "<group>"; };
 		7282724326BEE99E0025304B /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		7282725726BEF9B20025304B /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,6 +173,7 @@
 				7261CB4B26B8A0F400A8E944 /* Info.plist */,
 				72680B1626BC515A00445062 /* Localizable.strings */,
 				7282724326BEE99E0025304B /* Main.storyboard */,
+				7282725726BEF9B20025304B /* MainViewController.swift */,
 			);
 			path = "Mobile App";
 			sourceTree = "<group>";
@@ -289,20 +288,10 @@
 			path = TitleCell;
 			sourceTree = "<group>";
 		};
-		72680B0126BC4EFE00445062 /* ErrorView */ = {
-			isa = PBXGroup;
-			children = (
-				72680B0226BC4F0F00445062 /* ErrorView.xib */,
-				72680B0726BC4F2000445062 /* ErrorView.swift */,
-			);
-			path = ErrorView;
-			sourceTree = "<group>";
-		};
 		72680B0F26BC4F5300445062 /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				72680B6026BC96FB00445062 /* StarScoreView */,
-				72680B0126BC4EFE00445062 /* ErrorView */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -464,7 +453,6 @@
 				7261CB4726B8A0F400A8E944 /* Assets.xcassets in Resources */,
 				72680B5426BC952300445062 /* OpenSans-Italic.ttf in Resources */,
 				72680AD526BAE2B300445062 /* LocationCellView.xib in Resources */,
-				72680B0326BC4F0F00445062 /* ErrorView.xib in Resources */,
 				72680B1726BC515A00445062 /* Localizable.strings in Resources */,
 				72680B5326BC952300445062 /* OpenSans-BoldItalic.ttf in Resources */,
 				72680B5826BC952300445062 /* OpenSans-ExtraBold.ttf in Resources */,
@@ -529,7 +517,7 @@
 				72680AB426BAD1DD00445062 /* HomeViewModel.swift in Sources */,
 				72680AF126BC3B9800445062 /* UIImage+Color.swift in Sources */,
 				7261CB3E26B8A0F000A8E944 /* AppDelegate.swift in Sources */,
-				72680B0826BC4F2000445062 /* ErrorView.swift in Sources */,
+				7282725826BEF9B20025304B /* MainViewController.swift in Sources */,
 				7261CBAD26B9974400A8E944 /* ScheduleModel.swift in Sources */,
 				7261CB9726B9708800A8E944 /* LocationDetailsModel.swift in Sources */,
 				72680AC926BAE23B00445062 /* LocationCell.swift in Sources */,
