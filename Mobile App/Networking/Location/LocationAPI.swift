@@ -31,11 +31,11 @@ class LocationAPI {
         guard let locationDetailsURL = URL(string: String(format: locationDetailsEndPoint, locationId), relativeTo: baseURL) else {
             return
         }
-        
+
         get(url: locationDetailsURL, resultHandler: resultHandler)
     }
 
-    private static func get<T: Codable>(url: URL, resultHandler: @escaping (Result<T,LocationAPIError>) -> Void) {
+    private static func get<T: Codable>(url: URL, resultHandler: @escaping (Result<T, LocationAPIError>) -> Void) {
         let request = URLRequest(url: url)
 
         let task = URLSession.shared.dataTask(with: request) { (data, response, error) in
