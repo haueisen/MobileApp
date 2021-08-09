@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-SemiBold.ttf">
+            <string>OpenSans-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="photoscell" rowHeight="148" id="P2t-nz-q5X" customClass="PhotosCell" customModule="Mobile_App" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="148"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="P2t-nz-q5X" id="S25-ml-z33">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="148"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fotos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yw1-un-IOt">
+                        <rect key="frame" x="28" y="32" width="358" height="24"/>
+                        <fontDescription key="fontDescription" name="OpenSans-SemiBold" family="Open Sans" pointSize="16"/>
+                        <color key="textColor" name="topaz"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Csi-70-avO">
+                        <rect key="frame" x="0.0" y="72" width="414" height="60"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="60" id="bIC-aB-oUU"/>
+                        </constraints>
+                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="16" id="Erh-Gf-Qqo">
+                            <size key="itemSize" width="60" height="60"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="28" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                    </collectionView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="yw1-un-IOt" firstAttribute="top" secondItem="S25-ml-z33" secondAttribute="top" constant="32" id="cfu-IZ-qzL"/>
+                    <constraint firstAttribute="trailing" secondItem="yw1-un-IOt" secondAttribute="trailing" constant="28" id="fed-tp-7L4"/>
+                    <constraint firstAttribute="bottom" secondItem="Csi-70-avO" secondAttribute="bottom" constant="16" id="guo-LO-GZF"/>
+                    <constraint firstItem="Csi-70-avO" firstAttribute="leading" secondItem="S25-ml-z33" secondAttribute="leading" id="j6M-l0-kkx"/>
+                    <constraint firstAttribute="trailing" secondItem="Csi-70-avO" secondAttribute="trailing" id="t1Y-wp-3xB"/>
+                    <constraint firstItem="yw1-un-IOt" firstAttribute="leading" secondItem="S25-ml-z33" secondAttribute="leading" constant="28" id="xgm-pd-JpB"/>
+                    <constraint firstItem="Csi-70-avO" firstAttribute="top" secondItem="yw1-un-IOt" secondAttribute="bottom" constant="16" id="z28-gK-KiQ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="collectionView" destination="Csi-70-avO" id="5Qe-GA-kyu"/>
+                <outlet property="name" destination="yw1-un-IOt" id="nSg-qq-hLD"/>
+            </connections>
+            <point key="canvasLocation" x="-123.18840579710145" y="-7.3660714285714279"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="topaz">
+            <color red="0.078431372549019607" green="0.67843137254901964" blue="0.72156862745098038" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-Light.ttf">
+            <string>OpenSans-Light</string>
+        </array>
+        <array key="OpenSans-SemiBold.ttf">
+            <string>OpenSans-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="aboutcell" rowHeight="184" id="8uQ-QS-oH6" customClass="AboutCell" customModule="Mobile_App" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="184"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="8uQ-QS-oH6" id="J4x-rU-l2D">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="184"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SOBRE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mi0-hr-bgL">
+                        <rect key="frame" x="28" y="16" width="358" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="22" id="TE4-9a-epT"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="OpenSans-SemiBold" family="Open Sans" pointSize="16"/>
+                        <color key="textColor" name="topaz"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hrn-3A-3R2">
+                        <rect key="frame" x="28" y="54" width="358" height="122"/>
+                        <string key="text">Se você curte um pão fresquinho, ou uma sobremesa caprichada, você precisa incluir uma visitinha a Padaria Pelicano no seu roteiro por BH. A fila é gigantesca, mas os quitutes estão sem dúvida entre os melhores da cidade. </string>
+                        <fontDescription key="fontDescription" name="OpenSans-Light" family="Open Sans" pointSize="16"/>
+                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="hrn-3A-3R2" secondAttribute="trailing" constant="28" id="Aa1-Gr-NLy"/>
+                    <constraint firstAttribute="trailing" secondItem="mi0-hr-bgL" secondAttribute="trailing" constant="28" id="Bdg-Pj-Psi"/>
+                    <constraint firstAttribute="bottom" secondItem="hrn-3A-3R2" secondAttribute="bottom" constant="8" id="KdU-39-de5"/>
+                    <constraint firstItem="hrn-3A-3R2" firstAttribute="leading" secondItem="J4x-rU-l2D" secondAttribute="leading" constant="28" id="Rev-C7-UWb"/>
+                    <constraint firstItem="mi0-hr-bgL" firstAttribute="top" secondItem="J4x-rU-l2D" secondAttribute="top" constant="16" id="bdY-FA-uW3"/>
+                    <constraint firstItem="mi0-hr-bgL" firstAttribute="leading" secondItem="J4x-rU-l2D" secondAttribute="leading" constant="28" id="n8W-2o-ebv"/>
+                    <constraint firstItem="hrn-3A-3R2" firstAttribute="top" secondItem="mi0-hr-bgL" secondAttribute="bottom" constant="16" id="yQi-QY-1Ka"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="aboutText" destination="hrn-3A-3R2" id="UKy-eX-dB9"/>
+                <outlet property="cellTitle" destination="mi0-hr-bgL" id="k5M-4y-atg"/>
+            </connections>
+            <point key="canvasLocation" x="-20.289855072463769" y="68.303571428571431"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="topaz">
+            <color red="0.078431372549019607" green="0.67843137254901964" blue="0.72156862745098038" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

@@ -4,37 +4,46 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Detail View Controller-->
-        <scene sceneID="7SX-j1-9uK">
+        <scene sceneID="Chj-3K-7qo">
             <objects>
-                <tableViewController id="7IE-7A-WFt" customClass="DetailViewController" customModule="Mobile_App" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="OHF-ol-mTq">
+                <viewController storyboardIdentifier="DetailViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="JuR-5n-PY9" customClass="DetailViewController" customModule="Mobile_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Edo-6V-xua">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="eEn-cf-7L0">
+                                <rect key="frame" x="197" y="443" width="20" height="20"/>
+                            </activityIndicatorView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" contentInsetAdjustmentBehavior="never" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="nvb-LW-Iwk">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="r13-lW-qpC"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="UoK-Jn-Pnh">
-                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="UoK-Jn-Pnh" id="pfH-E0-zT2">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="7IE-7A-WFt" id="wbK-ix-gho"/>
-                            <outlet property="delegate" destination="7IE-7A-WFt" id="bOc-TJ-0O0"/>
-                        </connections>
-                    </tableView>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="UyR-P5-IdU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                        <constraints>
+                            <constraint firstItem="nvb-LW-Iwk" firstAttribute="leading" secondItem="r13-lW-qpC" secondAttribute="leading" id="8M5-s8-xDj"/>
+                            <constraint firstItem="nvb-LW-Iwk" firstAttribute="top" secondItem="Edo-6V-xua" secondAttribute="top" id="Ejv-bR-cfx"/>
+                            <constraint firstItem="eEn-cf-7L0" firstAttribute="centerX" secondItem="r13-lW-qpC" secondAttribute="centerX" id="jp0-Y6-H6u"/>
+                            <constraint firstItem="r13-lW-qpC" firstAttribute="bottom" secondItem="nvb-LW-Iwk" secondAttribute="bottom" id="meq-5M-4mC"/>
+                            <constraint firstItem="eEn-cf-7L0" firstAttribute="centerY" secondItem="r13-lW-qpC" secondAttribute="centerY" id="wbO-4f-sUt"/>
+                            <constraint firstItem="r13-lW-qpC" firstAttribute="trailing" secondItem="nvb-LW-Iwk" secondAttribute="trailing" id="yG2-ke-0Gk"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="loadingIndicator" destination="eEn-cf-7L0" id="CPO-8N-540"/>
+                        <outlet property="tableView" destination="nvb-LW-Iwk" id="GZy-rN-N4Y"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LDE-x6-BV2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="139" y="80"/>
+            <point key="canvasLocation" x="-1662" y="113"/>
         </scene>
     </scenes>
     <resources>
