@@ -26,7 +26,9 @@
                             <outlet property="delegate" destination="w3r-Vl-A54" id="GN4-qU-RWf"/>
                         </connections>
                     </collectionView>
-                    <navigationItem key="navigationItem" id="qrA-0m-A6T"/>
+                    <navigationItem key="navigationItem" id="qrA-0m-A6T">
+                        <barButtonItem key="backBarButtonItem" title=" " id="c8D-O9-qcH"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="loadingIndicator" destination="Tyh-XI-eqU" id="GeL-mG-IB7"/>
                     </connections>
@@ -44,6 +46,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="sQG-dY-PcV">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </navigationBar>
                     <connections>
                         <segue destination="w3r-Vl-A54" kind="relationship" relationship="rootViewController" id="KER-DC-IhA"/>

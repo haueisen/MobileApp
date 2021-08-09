@@ -21,7 +21,15 @@ class LocationCell: UICollectionViewCell {
 
     required init?(coder: NSCoder) {
         super.init(coder: coder)
+        initialize()
+    }
 
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        initialize()
+    }
+
+    private func initialize() {
         self.contentView.layer.cornerRadius = 16
 
         self.layer.cornerRadius = 16
@@ -30,5 +38,14 @@ class LocationCell: UICollectionViewCell {
         self.layer.shadowOffset = CGSize(width: 0, height: 1)
         self.layer.shadowRadius = 3
         self.layer.masksToBounds = false
+    }
+
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        picture.image = nil
+        name.text = nil
+        locationType.text = nil
+        score.text = nil
+        starScore.clearScore()
     }
 }

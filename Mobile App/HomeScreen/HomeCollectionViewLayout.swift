@@ -16,7 +16,7 @@ class HomeCollectionViewLayout: UICollectionViewLayout {
     let heights: [CGFloat] = [296, 218, 234, 283, 253, 269]
     let margin: CGFloat = 16
     let numberOfColumns = 2
-    
+
     override func prepare() {
         super.prepare()
 
