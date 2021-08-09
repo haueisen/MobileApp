@@ -1,0 +1,23 @@
+"error_title" = "Erro";
+"error_message" = "Desculpe! Algo deu errado... :(";
+
+// MARK: - Home view controller
+"home_title" = "Início";
+"retry" = "Tentar novamente";
+
+// MARK: - Detail view controller
+"ok" = "OK";
+"photos_title" = "FOTOS";
+"about_title" = "SOBRE";
+"reviews_title" = "REVIEWS";
+
+"monday_abbrev" = "seg";
+"tuesday_abbrev" = "ter";
+"wednesday_abbrev" = "qua";
+"thursday_abbrev" = "qui";
+"friday_abbrev" = "sex";
+"saturday_abbrev" = "sab";
+"sunday_abbrev" = "dom";
+
+"day_to_day" = "a";
+"hour_to_hour" = "às";
