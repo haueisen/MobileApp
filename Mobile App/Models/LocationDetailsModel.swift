@@ -17,8 +17,8 @@ struct LocationDetails: Codable {
     var phone: String
     var schedule: Schedules
 
-    var address: String?
-    var adress: String?
+    private var address: String?
+    private var adress: String?
 
     /* Thinking in a real life situation
         This is only here because on model specification the field is called

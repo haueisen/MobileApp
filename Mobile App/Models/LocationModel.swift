@@ -8,6 +8,7 @@
 import Foundation
 
 struct Location: Codable {
+    // swiftlint:disable identifier_name
     private(set) var id: Int
     private(set) var name: String
     private(set) var review: Float
